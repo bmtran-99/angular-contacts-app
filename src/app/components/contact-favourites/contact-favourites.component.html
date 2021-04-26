@@ -1,0 +1,15 @@
+<div class="header">
+    <div class="overlay">
+        <h1>My Favourites</h1>
+    </div>
+</div>
+
+<div class="empty" *ngIf="isEmpty()">
+    <h2>You have not added anyone yet!</h2>
+</div>
+
+<div class="row wrap" fxLayout="16px grid">
+    <app-contact-item fxFlex="25%" *ngFor="let contact of favourites" [item]="contact"
+    (deleteFavourite)="deleteContact($event)">
+    </app-contact-item>
+</div>

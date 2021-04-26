@@ -1,0 +1,15 @@
+.contact-card {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header-img {
+    background-size: cover;
+    background-image: url('https://www.telegraph.co.uk/content/dam/technology/2021/01/28/Screenshot-2021-01-28-at-13-20-35_trans_NvBQzQNjv4BqgorLzNIuWKFjctv8STCiZsyL_iAq5T7dsR69ZpavGbo.png?imwidth=480');
+}
+
+.example-icon {
+    float: right;
+}

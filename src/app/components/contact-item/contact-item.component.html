@@ -1,0 +1,17 @@
+<mat-card class="contact-card">
+    <mat-card-header>
+        <div mat-card-avatar class="header-img"></div>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>{{ item.email }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="onClick(item)">DETAILS</button>
+        <button mat-raised-button color="warn" (click)="deleteContact(item)">DELETE</button>
+        <button *ngIf="isContactsRoute()"
+          mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" 
+          color="accent" #tooltip="matTooltip" matTooltip="Add to Favourites"
+          [matTooltipPosition]="tooltipPosition" (click)="addToFavourites(item)">
+            <mat-icon>favorite</mat-icon>
+          </button>
+    </mat-card-actions>
+</mat-card>

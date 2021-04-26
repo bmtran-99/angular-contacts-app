@@ -1,0 +1,30 @@
+<mat-card class="contact-card">
+    <mat-card-header>
+        <div mat-card-avatar class="header-img"></div>
+        <mat-card-title>{{ item.name }}</mat-card-title>
+        <mat-card-subtitle>{{ item.email }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list>
+            <mat-list-item><span class="prefix">Username:</span> {{item.username}}</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item><span class="prefix">Phone:</span> {{item.phone}}</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item><span class="prefix">Address:</span> {{item.address.suite}} at {{item.address.street}}, {{item.address.city}}</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item><span class="prefix">Website:</span> {{item.website}}</mat-list-item>
+            <mat-divider></mat-divider>
+
+            <mat-list-item><span class="prefix">Company:</span> {{item.company.name}}</mat-list-item>
+            <mat-divider></mat-divider>
+        </mat-list>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary">EDIT</button>
+        <button mat-raised-button color="warn">DELETE</button>
+        <button class ="back-btn" mat-raised-button color="primary" (click)="onClick()">BACK</button>
+    </mat-card-actions>
+</mat-card>

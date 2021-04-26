@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+   <span (click)="onTitleClick()" class="title">Contacts</span>
+   <span class="example-spacer"></span>
+   <button mat-flat-button color="primary" mat-flat-button color="primary" #tooltip="matTooltip" matTooltip="View all contacts"
+   [matTooltipPosition]="position" (click)="onViewAllClick()">
+    <span class="material-icons">
+        list
+        </span>
+    </button>
+   <button mat-flat-button color="primary" #tooltip="matTooltip" matTooltip="View favourite contacts"
+        [matTooltipPosition]="position" (click)="onViewFavouritesClick()">
+    <span class="material-icons">
+        favorite
+        </span>
+   </button>
+ </mat-toolbar>

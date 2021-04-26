@@ -1,0 +1,11 @@
+<div class="header">
+    <div class="overlay">
+        <h1>All Contacts</h1>
+    </div>
+</div>
+
+<div class="row wrap" fxLayout="16px grid">
+        <app-contact-item fxFlex="25%" *ngFor="let contact of contacts" [item]="contact"
+        (addFavourite)="addToFavourites($event)">
+    </app-contact-item>
+</div>
